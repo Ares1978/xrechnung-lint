@@ -1,0 +1,45 @@
+{
+  "name": "xrechnung-lint",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI linter & validator for German E-Rechnung (EN 16931: XRechnung 3.0 UBL & ZUGFeRD 2.3 CII)",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "xrechnung-lint": "./bin/xrechnung-lint.mjs"
+  },
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://erechnung.r6d.de",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ares1978/xrechnung-lint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ares1978/xrechnung-lint/issues"
+  },
+  "keywords": [
+    "xrechnung",
+    "zugferd",
+    "en16931",
+    "e-rechnung",
+    "kosit",
+    "ubl",
+    "cii",
+    "factur-x",
+    "validator"
+  ],
+  "scripts": {
+    "test": "node --test test/cli.test.mjs"
+  }
+}
